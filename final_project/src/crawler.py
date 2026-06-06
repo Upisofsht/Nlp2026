@@ -9,8 +9,12 @@ API_URL = "https://www.cna.com.tw/cna2018api/api/WNewsList"
 CATEGORIES = {
     "aipl": "政治",
     "aopl": "國際",
+    "acn": "兩岸",
     "afe": "財經",
     "ait": "科技",
+    "ahel": "生活",
+    "asoc": "社會",
+    "acul": "文化",
     "aspt": "體育",
     "amov": "娛樂",
 }
