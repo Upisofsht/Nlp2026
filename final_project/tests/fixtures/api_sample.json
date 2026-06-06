@@ -1,0 +1,20 @@
+{
+  "Result": "Y",
+  "ResultData": {
+    "Category": "aspt",
+    "CategoryName": "運動",
+    "NextPageIdx": 3,
+    "Items": [
+      {
+        "Id": "202606060001",
+        "HeadLine": "體育新聞一",
+        "PageUrl": "https://www.cna.com.tw/news/aspt/202606060001.aspx"
+      },
+      {
+        "Id": "202606060002",
+        "HeadLine": "體育新聞二",
+        "PageUrl": "https://www.cna.com.tw/news/aspt/202606060002.aspx"
+      }
+    ]
+  }
+}
