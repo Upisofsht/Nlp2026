@@ -31,7 +31,7 @@ def parse_article(html: str) -> dict:
     title_el = soup.select_one("h1.centralContent")
     title = title_el.get_text(strip=True) if title_el else ""
     paras = soup.select("div.paragraph p")
-    content = "".join(p.get_text(strip=True) for p in paras)
+    content = " ".join(p.get_text(strip=True) for p in paras)
     return {"title": title, "content": content}
 
 
