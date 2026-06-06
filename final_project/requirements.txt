@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+jieba
+scikit-learn
+gensim
+pandas
+matplotlib
+seaborn
+pytest
