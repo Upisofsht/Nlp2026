@@ -14,12 +14,12 @@ def clean_text(text: str) -> str:
     return text.strip()
 
 
-def load_stopwords(path: str) -> set:
+def load_stopwords(path: str) -> set[str]:
     with open(path, encoding="utf-8") as f:
         return {line.strip() for line in f if line.strip()}
 
 
-def tokenize(text: str, stopwords: set = None) -> list:
+def tokenize(text: str, stopwords: set[str] | None = None) -> list[str]:
     stopwords = stopwords or set()
     cleaned = clean_text(text)
     tokens = jieba.lcut(cleaned)
