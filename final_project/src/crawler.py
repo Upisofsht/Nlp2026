@@ -40,7 +40,7 @@ def parse_article(html: str) -> dict:
 def fetch(url: str, sleep: float = 1.0) -> str:
     resp = requests.get(url, headers=HEADERS, timeout=15)
     resp.raise_for_status()
-    time.sleep(sleep)  # 禮貌爬
+    time.sleep(sleep)
     return resp.text
 
 
