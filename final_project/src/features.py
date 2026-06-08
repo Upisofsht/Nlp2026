@@ -1,6 +1,5 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
-from gensim.models import Word2Vec, FastText
 
 
 def build_tfidf(docs, max_features=20000):
@@ -11,6 +10,7 @@ def build_tfidf(docs, max_features=20000):
 
 
 def train_word2vec(tokenized_docs, vector_size=100, min_count=2, epochs=10, use_fasttext=False):
+    from gensim.models import Word2Vec, FastText  # 延遲載入：只有用到 word2vec 才需要 gensim
     Model = FastText if use_fasttext else Word2Vec
     model = Model(sentences=tokenized_docs, vector_size=vector_size,
                   window=5, min_count=min_count, workers=4, epochs=epochs)
